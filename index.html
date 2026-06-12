@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<title>Newfound Poker League 7X Exact Car v61</title>
+<title>Newfound Poker League 7X Exact Car v62</title>
 <style>
 :root{
   --bg:#050506;--panel:#101013;--panel2:#17171b;--line:#2b2b31;--text:#f6f4ed;--muted:#a9a6a0;
@@ -2295,7 +2295,7 @@ body{padding-left:clamp(10px,2vw,18px)!important;padding-right:clamp(10px,2vw,18
 </style>
 <script>
 /* ===== v50 title marker ===== */
-(function(){try{document.title='Newfound Poker League 7X Exact Car v61';}catch(e){}})();
+(function(){try{document.title='Newfound Poker League 7X Exact Car v62';}catch(e){}})();
 </script>
 
 <style>
@@ -2523,7 +2523,7 @@ body{padding-left:clamp(10px,2vw,18px)!important;padding-right:clamp(10px,2vw,18
     if(e.target.id==='savedSetupSelect') return;
     if(e.target.matches('input,select')) syncFields(false);
   },true);
-  try{ document.title='Newfound Poker League 7X Exact Car v61'; }catch(e){}
+  try{ document.title='Newfound Poker League 7X Exact Car v62'; }catch(e){}
   try{ if(typeof render==='function') render(); }catch(e){ console.warn('v57 game selector link fix refresh failed',e); }
 })();
 </script>
@@ -2621,12 +2621,12 @@ textarea{
 }
 </style>
 <script id="v58-lux-build-background-marker">
-(function(){try{document.title='Newfound Poker League 7X Exact Car v61';}catch(e){}})();
+(function(){try{document.title='Newfound Poker League 7X Exact Car v62';}catch(e){}})();
 </script>
 
 
-<style id="v59-premium-splash-app-style">
-/* ===== v59 premium splash app style ===== */
+<style id="v59-premium-app-style">
+/* ===== v59 premium app style ===== */
 :root{
   --luxGold:#f8d86a;
   --luxGold2:#b97817;
@@ -2740,15 +2740,7 @@ input,select,textarea{
   .tab-btn{min-width:94px!important;padding:12px 10px!important;}
 }
 </style>
-<script id="v61-no-internal-splash-marker">
-(function(){
-  try{document.title='Newfound Poker League 7X Exact Car v61';}catch(e){}
-})();
-</script>
-
-
-
-<!-- v61: internal Appilix splash removed; splash screen should be configured in Appilix, not inside the app build. -->
+<!-- v62: no internal splash screen; Appilix splash must be configured outside this app build. -->
 <style id="v60-internal-lux-style">
 /* ===== v60 internal premium race/poker interface style ===== */
 :root{
@@ -2893,7 +2885,148 @@ input:focus,select:focus,textarea:focus{
   button:hover,.tab-btn:hover{filter:none;}
 }
 </style>
-<script id="v60-internal-lux-style-marker">(function(){try{document.title='Newfound Poker League 7X Exact Car v61';}catch(e){}})();</script>
+<script id="v60-internal-lux-style-marker">(function(){try{document.title='Newfound Poker League 7X Exact Car v62';}catch(e){}})();</script>
+
+
+
+<style id="v62-no-splash-lux-app-style">
+/* ===== v62 app-only luxury style, no internal splash screen ===== */
+html,body{
+  min-height:100%;
+  background:
+    radial-gradient(circle at 50% -12%, rgba(255,215,103,.26), transparent 34%),
+    radial-gradient(circle at 12% 12%, rgba(255,255,255,.075), transparent 17%),
+    radial-gradient(circle at 88% 12%, rgba(255,255,255,.07), transparent 17%),
+    radial-gradient(ellipse at 50% 102%, rgba(255,132,24,.17), transparent 54%),
+    linear-gradient(180deg,#010101 0%,#070504 36%,#130904 62%,#020202 100%)!important;
+  overflow-x:hidden!important;
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:-2;
+  background:
+    linear-gradient(115deg, transparent 0 28%, rgba(255,229,138,.045) 28.25%, transparent 29.2% 62%, rgba(255,255,255,.025) 62.25%, transparent 63.3%),
+    radial-gradient(ellipse at 50% 4%, rgba(255,229,138,.12), transparent 46%),
+    radial-gradient(ellipse at 20% 36%, rgba(255,122,24,.075), transparent 36%),
+    radial-gradient(ellipse at 80% 36%, rgba(255,122,24,.075), transparent 36%),
+    linear-gradient(180deg, rgba(0,0,0,.06), rgba(0,0,0,.86));
+}
+body::after{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:-1;
+  background:
+    radial-gradient(circle at 50% 15%, rgba(255,245,196,.08), transparent 30%),
+    repeating-linear-gradient(90deg, rgba(255,216,106,.025) 0 1px, transparent 1px 120px),
+    repeating-linear-gradient(0deg, rgba(255,122,24,.018) 0 1px, transparent 1px 96px);
+  opacity:.32;
+  mix-blend-mode:screen;
+}
+.app{
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.048), rgba(255,255,255,.012)),
+    radial-gradient(circle at top, rgba(255,229,138,.115), transparent 34%),
+    rgba(0,0,0,.42)!important;
+  border:1px solid rgba(255,229,138,.16)!important;
+  box-shadow:0 40px 110px rgba(0,0,0,.76),0 0 88px rgba(255,122,24,.09),inset 0 1px 0 rgba(255,255,255,.075)!important;
+}
+.card,.saved-setup-card,.saved-structure-card,.alert,.table-wrap,.race-item,.player-row,.archive-row,.simple-row,.logic-item,.stat{
+  background:
+    radial-gradient(circle at 16% 0%, rgba(255,229,138,.14), transparent 34%),
+    radial-gradient(circle at 84% 0%, rgba(255,122,24,.085), transparent 40%),
+    linear-gradient(160deg, rgba(21,18,13,.965), rgba(5,5,7,.985) 58%, rgba(13,7,3,.965))!important;
+  border-color:rgba(255,229,138,.24)!important;
+  box-shadow:0 24px 62px rgba(0,0,0,.58), inset 0 1px 0 rgba(255,255,255,.07), 0 0 0 1px rgba(0,0,0,.55)!important;
+}
+.card::before,.saved-setup-card::before,.saved-structure-card::before,.table-wrap::before{
+  background:linear-gradient(118deg, transparent 0 38%, rgba(255,236,157,.09) 39%, transparent 40% 100%)!important;
+  opacity:.38!important;
+}
+h2,h3,.card h2,.card h3,.section-title h2,.section-title h3{
+  color:#ffe78b!important;
+  text-shadow:0 0 18px rgba(255,229,138,.30),0 2px 0 #000!important;
+}
+.tabs,.bottom-nav{
+  background:linear-gradient(180deg, rgba(27,22,13,.95), rgba(2,2,3,.98))!important;
+  border-color:rgba(255,229,138,.25)!important;
+  box-shadow:0 22px 54px rgba(0,0,0,.62), inset 0 1px 0 rgba(255,255,255,.08)!important;
+}
+.tab-btn,.bottom-nav button,button.secondary,.setup-type button,.type-toggle button{
+  background:linear-gradient(180deg, rgba(25,25,29,.98), rgba(5,5,7,.98))!important;
+  color:#fff4d4!important;
+  border:1px solid rgba(255,229,138,.24)!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07), 0 12px 28px rgba(0,0,0,.38)!important;
+}
+.tab-btn.active,.bottom-nav button.active,button:not(.secondary):not(.danger):not(.good):not(.ghost),.setup-type button.selected,.type-toggle button.selected{
+  background:linear-gradient(180deg,#fff2a6 0%,#f1a13c 46%,#b75b0a 100%)!important;
+  color:#050505!important;
+  border-color:rgba(255,244,179,.76)!important;
+  box-shadow:0 0 30px rgba(255,150,36,.38), inset 0 1px 0 rgba(255,255,255,.45)!important;
+}
+input,select,textarea{
+  background:linear-gradient(180deg, rgba(6,6,7,.99), rgba(0,0,0,.99))!important;
+  border:1px solid rgba(255,229,138,.22)!important;
+  color:#fffaf0!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.055),0 0 0 1px rgba(0,0,0,.45)!important;
+}
+input:focus,select:focus,textarea:focus{
+  border-color:rgba(255,229,138,.64)!important;
+  box-shadow:0 0 0 3px rgba(255,229,138,.13), inset 0 1px 0 rgba(255,255,255,.08)!important;
+}
+.poker-table{
+  background:
+    radial-gradient(circle at 50% 10%, rgba(255,229,138,.22), transparent 26%),
+    radial-gradient(circle at 18% 30%, rgba(255,122,24,.18), transparent 44%),
+    radial-gradient(circle at 86% 72%, rgba(255,229,138,.10), transparent 44%),
+    linear-gradient(145deg, rgba(16,13,9,.99), rgba(3,7,6,.99) 60%, rgba(18,9,3,.99))!important;
+  border-color:rgba(255,229,138,.70)!important;
+}
+.seat{
+  background:
+    radial-gradient(circle at 26% 14%, rgba(255,234,153,.18), transparent 34%),
+    radial-gradient(circle at 84% 78%, rgba(255,122,24,.12), transparent 38%),
+    linear-gradient(145deg, rgba(7,20,17,.90), rgba(3,4,5,.97))!important;
+  border-color:rgba(255,229,138,.43)!important;
+}
+/* Absolute splash kill: nothing inside this app may display its own launch overlay. */
+[id*="splash" i],[class*="splash" i],[data-splash],.launch-screen,.startup-screen,.loading-screen{
+  display:none!important;
+  opacity:0!important;
+  visibility:hidden!important;
+  pointer-events:none!important;
+}
+@media(max-width:759px){
+  body{padding:8px 8px 92px!important;}
+  .app{padding:6px!important;border-radius:22px!important;max-width:100%!important;}
+  .tabs{overflow-x:auto!important;scrollbar-width:none!important;gap:7px!important;}
+  .tabs::-webkit-scrollbar{display:none!important;}
+  .tab-btn{min-width:94px!important;padding:12px 10px!important;}
+  .bottom-nav{grid-template-columns:repeat(4,1fr)!important;}
+}
+</style>
+<script id="v62-remove-any-splash-runtime">
+(function(){
+  function killSplash(){
+    try{
+      document.querySelectorAll('[id*="splash" i],[class*="splash" i],[data-splash],.launch-screen,.startup-screen,.loading-screen').forEach(function(el){
+        if(el.id==='v62-no-splash-lux-app-style' || el.id==='v62-remove-any-splash-runtime') return;
+        el.remove();
+      });
+    }catch(e){}
+  }
+  try{document.title='Newfound Poker League 7X Exact Car v62';}catch(e){}
+  killSplash();
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',killSplash,{once:false});
+  window.addEventListener('load',killSplash,{once:false});
+  setTimeout(killSplash,50);
+  setTimeout(killSplash,350);
+})();
+</script>
 
 </body>
 </html>
